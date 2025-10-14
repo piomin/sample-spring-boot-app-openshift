@@ -1,0 +1,16 @@
+apiVersion: skaffold/v4beta5
+kind: Config
+metadata:
+  name: sample-spring-boot-app-openshift
+build:
+  artifacts:
+    - image: piomin/sample-spring-boot-app-openshift
+      jib:
+        args:
+          - -Pjib
+          - -DskipTests
+manifests:
+  rawYaml:
+    - k8s/deployment.yaml
+deploy:
+  kubectl: {}

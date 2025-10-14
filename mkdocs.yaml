@@ -1,0 +1,11 @@
+site_name: sample-spring-boot-app-openshift
+site_description: 
+repo_url: https://github.com/piomin/sample-spring-boot-app-openshift
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+# Note for content editors, edit only the section below
+nav:
+  - sample-spring-boot-app-openshift Documentation: index.md
