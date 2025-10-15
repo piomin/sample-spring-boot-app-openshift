@@ -25,3 +25,16 @@ spec:
   type: service
   owner: piomin
   lifecycle: experimental
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: piomin
+  description: "The team responsible for awesome features"
+spec:
+  type: team
+  children:
+    - dev-team
+    - qa-team
+  members:
+    - piomin
